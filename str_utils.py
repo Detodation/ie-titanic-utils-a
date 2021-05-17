@@ -7,4 +7,6 @@ def tokenize(text):
 
 #python to start python in the terminal
 #exit() to exit from the py script in terminal
-
+str
+if __name__ == "__main__":
+     print(tokenize("Hello world!"))
