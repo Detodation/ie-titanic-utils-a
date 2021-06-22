@@ -5,7 +5,9 @@ IE Titanic utils.
 __version__ = "0.1.0"  # semver.org
 
 
-def tokenize(text):
+def tokenize(text,lower=True):
+    if lower:
+        text=text.lower()
     return text.split()
 
 
