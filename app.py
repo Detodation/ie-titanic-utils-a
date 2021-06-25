@@ -35,7 +35,7 @@ def do_tokenize():
     sentence = request.args["sentence"] #this gives me the sentence that the user passes, so now we can tokenize my sentence
     lower = bool(request.args.get("lower",False)) #if we wanna make a parameter optional in our function we will use the get+False
     return str(tokenize(sentence, lower=lower)) #str to avoid getting a list of tokens
-
+52178
 
 
 # now if we run http://127.0.0.1:53707/tokenize we will see tha API tokenize from the function

@@ -6,7 +6,7 @@ __version__ = "0.1.0"  # semver.org
 
 
 def tokenize(text,lower=True):
-    if lower:
+    if lower is True:
         text=text.lower()
     return text.split()
 
