@@ -10,9 +10,10 @@ app = Flask(__name__)
 @app.route("/")
 def home(): #Taking no params
     return { 
-        "message":"Hello World!",
-        "version":"0.1"
-    }  #Adding this ({message and version}) to return Json data instead of string data GROUPWORK! So anybody consuming data from this app, can easily transform this into a python dictionary and consume this data easily
+        "message": "Hello World!",
+        "version": "0.1"}  
+
+#Adding this ({message and version}) to return Json data instead of string data GROUPWORK! So anybody consuming data from this app, can easily transform this into a python dictionary and consume this data easily
     
 #This up here is a web API
 
