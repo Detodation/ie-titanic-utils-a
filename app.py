@@ -9,7 +9,10 @@ app = Flask(__name__)
 #We need to decorate this function with app.route:
 @app.route("/")
 def home(): #Taking no params
-    return "Hello World!"
+    return { 
+        "message":"Hello World!"
+        "version":"0.1"
+    }
     
 #This up here is a web API
 
@@ -35,7 +38,7 @@ def do_tokenize():
     sentence = request.args["sentence"] #this gives me the sentence that the user passes, so now we can tokenize my sentence
     lower = bool(request.args.get("lower",False)) #if we wanna make a parameter optional in our function we will use the get+False
     return str(tokenize(sentence, lower=lower)) #str to avoid getting a list of tokens
-52178
+#Adding this to return Json data instead of string data GROUPWORK! So anybody consuming data from this app, can easily transform this into a python dictionary and consume this data easily
 
 
 # now if we run http://127.0.0.1:53707/tokenize we will see tha API tokenize from the function
