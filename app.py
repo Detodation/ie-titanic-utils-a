@@ -55,5 +55,7 @@ def do_tokenize():
 # then lsof -i :53703 won't display anything
 
 
-
-    
+if __name__ == "__main__":
+    import os
+    port = int(os.environ["PORT"])
+    app.run(host="0.0.0.0", port=port)
