@@ -7,4 +7,7 @@ module = "ie_utils"
 author = "Ignacio Martínez de Toda"
 author-email = "Imartinezdetoda@student.ie.edu"
 description-file = "README.md"
-
+requires = [
+"pandas",
+#flask, instead of specifying it here, we are doing it in the requirements.txt
+]
